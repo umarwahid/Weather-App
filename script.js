@@ -35,35 +35,10 @@ async function checkWeather(city){
 	icon.src = `${weather_data.current.condition.icon}`;
 	// console.log(weather_data.current.condition.text);
 
-	// switch(weather_data.current.condition.text){
-	// 	case 'Clouds':
-	// 		weather_img.src = "/images/clouds.png"
-	// 		break;
-	// 	case 'Clear':
-	// 		weather_img.src = "/images/clear.png"
-	// 		break;
-	// 	case 'Drizzle':
-	// 		weather_img.src = "/images/drizzle.png"
-	// 		break;
-	// 	case 'Humidity':
-	// 		weather_img.src = "/images/humidity.png"
-	// 		break;
-	// 	case 'Mist':
-	// 		weather_img.src = "/images/mist.png"
-	// 		break;
-	// 	case 'Rain':
-	// 		weather_img.src = "/images/rain.png"
-	// 		break;
-	// 	case 'Snow':
-	// 		weather_img.src = "/images/snow.png"
-	// 		break;
-	// 	case 'Wind':
-	// 		weather_img.src = "/images/wind.png"
-	// 		break;
-	// }
+	
 }
 
 searchBtn.addEventListener('click', (e)=>{
-	e.preventDefault();
+	// e.preventDefault();
 	checkWeather(inputBox.value);
 })
