@@ -39,6 +39,6 @@ async function checkWeather(city){
 }
 
 searchBtn.addEventListener('click', (e)=>{
-	// e.preventDefault();
+	e.preventDefault();
 	checkWeather(inputBox.value);
 })
