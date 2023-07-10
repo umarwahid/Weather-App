@@ -33,12 +33,11 @@ async function checkWeather(city){
 	humidity.innerHTML = `${weather_data.current.humidity}%`;
 	wind_speed.innerHTML = `${weather_data.current.wind_kph}kp/H`;
 	icon.src = `${weather_data.current.condition.icon}`;
-	// console.log(weather_data.current.condition.text);
 
 	
 }
 
 searchBtn.addEventListener('click', (e)=>{
-	e.preventDefault();
+	// e.preventDefault();
 	checkWeather(inputBox.value);
 })
